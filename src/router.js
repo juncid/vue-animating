@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Modal from './views/Modal.vue'
 import List from './views/List'
+import Cards from './views/Cards'
+import Drawer from './views/Drawer'
 
 Vue.use(Router)
 
@@ -18,6 +20,16 @@ export default new Router({
       path: '/list',
       name: 'list',
       component: List
+    },
+    {
+      path: '/drawer',
+      name: 'drawer',
+      component: Drawer
+    },
+    {
+      path: '/cards',
+      name: 'cards',
+      component: Cards
     },
     {
       path: '/about',
