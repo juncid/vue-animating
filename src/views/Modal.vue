@@ -1,9 +1,15 @@
 <template>
-  <div class="home">
+  <div>
+    <h1>This is the modal page</h1>
+
     <button @click="toggleModal">Open</button>
-    <div v-if="isOpen" class="modal">
-      <button @click="toggleModal">Close</button>
-    </div>
+
+    <transition name="fade">
+      <div v-if="isOpen" class="modal">
+        <button @click="toggleModal">Close</button>
+      </div>
+    </transition>
+
   </div>
 </template>
 
@@ -22,4 +28,6 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+</style>
